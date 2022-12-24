@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=css/style.css>
+    <link rel="icon" href=img/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png>
+    <title>Homework</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Homework 4 JS</h1>
+    <p>Напишите код приложения, интерфейс которого представляет собой 2 <em>input</em> и кнопку. В <em>input</em> можно ввести любое число. При клике на кнопку происходит следующее:</p>
+    <ul>
+        <li>Если оба числа не попадают в диапазон от 100 до 300 или введено не число — выводить ниже текст «одно из чисел вне диапазона от 100 до 300»;</li>
+        <li>Если числа попадают в диапазон от 100 до 300 — сделать запрос c помощью <b>fetch</b> по <em>URL</em> <a href="https://picsum.photos/200/300" target="_blank">https://picsum.photos/200/300</a>, где первое число — ширина картинки, второе — высота.</li>
+    </ul>
+    <p>Пример: если пользователь ввёл 150 и 200, то запрос будет вида https://picsum.photos/150/200.</p>
+    <p>После получения данных вывести ниже картинку на экран.</p>
+    </header>
+    <main>
+        <form action="">
+            <input class="INFO js-get-number_1" type="text" placeholder="Введите ширину:" required="">
+            <input class="INFO js-get-number_2" type="text" placeholder="Введите высоту:" required="">
+            <button class="btn" type="button">PRESS</button>
+            <button class="reload" onClick="window.location.reload()">Refresh Page</button>
+            <div class="result"></div>
+        </form>
+    </main>
+    <script src=js/app.js></script>
+</body>
+</html>

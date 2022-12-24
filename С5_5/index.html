@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=css/style.css>
+    <link rel="icon" href=img/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png>
+    <title>Homework</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Homework 5 JS</h1>
+    <p>Написать код приложения, интерфейс которого состоит из двух <em>input</em> и кнопки. В <em>input</em> можно ввести любое число.</p>
+    <ul>
+        <li>Заголовок первого <em>input</em> — «номер страницы».</li>
+        <li>Заголовок второго <em>input</em> — «лимит».</li>
+        <li>Заголовок кнопки — «запрос».
+        </li>
+    </ul>
+    <p>При клике на кнопку происходит следующее:</p>
+    <ul>
+        <li>Если число в первом <em>input</em> не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст «Номер страницы вне диапазона от 1 до 10».</li>
+        <li>Если число во втором <em>input</em> не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст «Лимит вне диапазона от 1 до 10».</li>
+        <li>Если и первый, и второй <em>input</em> не в диапазонах или не являются числами — выводить ниже текст «Номер страницы и лимит вне диапазона от 1 до 10».</li>
+        <li>Если числа попадают в диапазон от 1 до 10 — сделать запрос по <em>URL</em> <a href="https://picsum.photos/v2/list?page=1&limit=10" target="_blank">https://picsum.photos/v2/list?page=1&limit=10</a>, где <em>GET</em>-параметр <b>page</b> — это число из первого <em>input</em>, а <em>GET</em>-параметр <b>limit</b> — это введённое число второго <em>input</em>.</li>
+    </ul>
+    <p>Пример: если пользователь ввёл 5 и 7, то запрос будет вида https://picsum.photos/v2/list?page=5&limit=7.</p>
+    <p>После получения данных вывести список картинок на экран.</p>
+    <p>Если пользователь перезагрузил страницу, то ему должны показываться картинки из последнего успешно выполненного запроса (использовать localStorage).</p>
+    </header>
+    <main>
+        <form action="">
+            <input class="INFO js-get-number_1" type="text" placeholder="Номер страницы:" required="">
+            <input class="INFO js-get-number_2" type="text" placeholder="Лимит:" required="">
+            <button class="btn" type="button">Запрос</button>
+            <button class="reload" onClick="window.location.reload()">Refresh Page</button>
+            <div class="result_1"></div>
+            <div class="result_2"></div>
+            <div class="result_3"></div>
+        </form>
+    </main>
+    <script src=js/app.js></script>
+</body>
+</html>

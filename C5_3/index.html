@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=css/style.css>
+    <link rel="icon" href=img/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png>
+    <title>Homework</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Homework 3 JS</h1>
+    <p>Напишите код приложения, интерфейс которого представляет собой <em>input</em> и кнопку. В <em>input</em> можно ввести любое число. При клике на кнопку должно происходить следующее:</p>
+    <ul>
+        <li>Если число не попадает в диапазон от 1 до 10 — выводить ниже текст «число вне диапазона от 1 до 10».</li>
+        <li>Если число попадает в диапазон от 1 до 10 — сделать запрос c помощью <em>XHR</em> по <em>URL</em> <a href="https://picsum.photos/v2/list?limit=10" target="_blank">https://picsum.photos/v2/list?limit=10</a>, где <b>get</b>-параметр <b>limit</b> — это введённое число.</li>
+    </ul>
+    <p>Пример: если пользователь ввёл 5, то запрос будет вида https://picsum.photos/v2/list?limit=5.</p>
+    <p>После получения данных вывести ниже картинки на экран.</p>
+    </header>
+    <main>
+        <form action="">
+            <input class="INFO js-get-number" type="text" placeholder="Введите любое число в поле:" required="">
+            <button class="btn" type="button">PRESS</button>
+            <button class="reload" onClick="window.location.reload()">Refresh Page</button>
+            <div class="result"></div>
+        </form>
+    </main>
+    <script src=js/C5_3.js></script>
+</body>
+</html>
